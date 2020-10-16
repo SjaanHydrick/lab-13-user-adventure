@@ -25,6 +25,7 @@ export function loadProfile() {
     const name = document.getElementById('name');
     const hp = document.getElementById('hp');
     const gil = document.getElementById('gil');
+    const tapes = document.getElementById('tapes');
 
     const user = getUser();
 
@@ -34,6 +35,7 @@ export function loadProfile() {
 
     name.textContent = user.name;
     gil.textContent = user.gil;
+    tapes.textContent = user.tapes;
 
     if (isDead(user)) {
         hp.textContent = 'DEAD';
