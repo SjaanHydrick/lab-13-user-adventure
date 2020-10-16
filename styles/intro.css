@@ -1,0 +1,71 @@
+@font-face {
+    font-family: barcade;
+    src: url('../barcadbold.ttf')
+}
+
+@font-face {
+    font-family: rockOfTime;
+    src: url('../Rock\ of\ Times.otf')
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url('../Quicksand_Book.otf')
+}
+
+@font-face {
+    font-family: QuickSandBold;
+    src: url('../Quicksand_Bold.otf')
+}
+
+@font-face {
+    font-family: HelloCrafter;
+    src: url('../Hello\ Crafter\ -\ Personal\ Use.ttf')
+}
+
+body {
+    background-color: black;
+    background-image: url('../UserQuest/forestBackground.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 10%;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#mixtape {
+    font-family: HelloCrafter;
+    font-size: 110pt;
+    color: darkseagreen;
+    text-shadow: 3px 3px 5px black;
+}
+
+#apocalypse {
+    font-family: barcade;
+    font-size: 80pt;
+    color: goldenrod;
+    text-shadow: 3px 3px 5px black;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: QuickSand;
+    font-size: 30pt;
+    color: gainsboro;
+    text-shadow: 3px 3px 5px black;
+}
+
+a:hover {
+    font-family: QuickSandBold;
+}
