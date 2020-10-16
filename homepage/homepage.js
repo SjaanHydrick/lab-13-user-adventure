@@ -12,6 +12,7 @@ const img = document.getElementById('merchant');
 input.style.display = 'none';
 readyButton.style.display = 'none';
 buttonTwo.style.display = 'none';
+img.style.visibility = 'hidden';
 text.textContent = 'Hey...';
 
 buttonOne.addEventListener('click', () => {
@@ -19,6 +20,7 @@ buttonOne.addEventListener('click', () => {
     buttonOne.style.display = 'none';
     buttonTwo.style.display = 'inline';
     img.src = '../UserQuest/shopkeep1.jpg';
+    img.style.visibility = 'visible';
 });
 
 buttonTwo.addEventListener('click', () => {
