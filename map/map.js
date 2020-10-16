@@ -1,15 +1,28 @@
-import { quests } from '../quests/quests.js';
+import quests from '../attic.js';
+import { getUser, loadProfile } from '../closet.js';
+import createQuestLink from './createLink.js';
+import createCompletedQuest from './completedQuests.js';
+import hasCompletedAllQuests from './completedAllQuests.js';
+import isDead from '../quests/isDead.js';
 
-const ul = document.querySelector('ul');
+loadProfile();
 
-quests.forEach(quest => {
-    const li = document.createElement('li');
-    const link = document.createElement('a');
+const user = getUser();
 
-    li.appendChild(link);
+if (isDead(user) || hasCompletedAllQuests(quests, user)) {
+    window.location = '../results';
+}
 
-    link.textContent = quest.title;
-    link.href = `/quests/?id=${quests.id}`;
+const nav = document.getElementById('quests');
 
-    ul.append(li);
-});
+for (let i = 0; i < quests.length; i++) {
+    const quest = quests[i];
+    let questDisplay = null;
+    if (user.completed[quest.id]) {
+        questDisplay = createCompletedQuest(quest);
+    } else {
+        questDisplay = createQuestLink(quest);
+    }
+
+    nav.appendChild(questDisplay);
+}
