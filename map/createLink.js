@@ -5,8 +5,8 @@ function createQuestLink(quest) {
 
     link.href = '../quests/?id=' + quest.id;
 
-    link.style.top = quest.map.top;
-    link.style.left = quest.map.left;
+    link.style.marginTop = quest.map.marginTop;
+    link.style.marginLeft = quest.map.marginLeft;
     link.textContent = quest.title;
 
     return link;

@@ -9,7 +9,10 @@
 }
 
 body {
-
+    background-image: url('../UserQuest/Forest.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .profile {
@@ -58,17 +61,38 @@ h2 {
     margin-bottom: 3px;
 }
 
-img {
-    position: absolute;
-    text-align: center;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 600px;
-    border: solid 3pt gold;
+
+#position {
+    position: relative;
 }
 
-nav {
+img {
+    position: fixed;
+    left: 85px;
+    top: 120px;
+    height: 550px;
+    border: solid 3pt gold;
+    z-index: -1;
+}
 
+.quest {
+    float: left;
+    height: 70px;
+    width: 100px;
+    padding-top: 30px;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 15pt;
+    font-family: QuickSand;
+    border-radius: 100px;
+    background-color: seagreen;
+    box-shadow: 5px 5px 10px #202020;
+    color: cornsilk;
+    text-decoration: none;
+    transition: transform 1s;
+
+}
+
+.quest:hover {
+    transform: scale(1.1);
 }

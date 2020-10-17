@@ -3,7 +3,10 @@ const subway = {
 
     title:'Strange Cave',
 
-    map: {},
+    map: {
+        marginTop: '120px',
+        marginLeft: '90px'
+    },
 
     image:'/subway1.jpg',
 
@@ -50,7 +53,10 @@ const mall = {
 
     title:'Vast Structure',
 
-    map: {},
+    map: {       
+        marginTop: '520px',
+        marginLeft: '150px'
+    },
 
     image:'/mall2.jpg',
 
@@ -100,7 +106,10 @@ const cabin = {
 
     title:'Rough Cabin',
 
-    map: {},
+    map: {        
+        marginTop: '270px',
+        marginLeft: '-250px'
+    },
 
     image:'/cabin2.jpg',
 
@@ -149,7 +158,10 @@ const groceryStore = {
 
     title:'Food Store',
 
-    map: {},
+    map: {
+        marginTop: '550px',
+        marginLeft: '-300px'
+    },
 
     image:'/grocery3.png',
 
@@ -197,7 +209,10 @@ const coast = {
 
     title:'The Coast',
 
-    map: {},
+    map: {
+        marginTop: '420px',
+        marginLeft: '210px'
+    },
 
     image:'/beach2.jpg',
 
