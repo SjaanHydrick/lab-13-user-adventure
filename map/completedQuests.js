@@ -1,11 +1,10 @@
 
 function createCompletedQuest(quest) {
     const span = document.createElement('span');
-    span.classList.add('quest');
     span.classList.add('completed');
 
-    span.style.top = quest.map.top;
-    span.style.left = quest.map.left;
+    span.style.marginTop = quest.map.marginTop;
+    span.style.marginLeft = quest.map.marginLeft;
 
     span.textContent = quest.title;
     return span;

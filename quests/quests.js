@@ -15,7 +15,7 @@ const quest = findById(quests, questId);
 const tape = findById(tapes, questId);
 
 if (!quest) {
-    window.location = '../map/map.html';
+    window.location = '../map/index.html';
 }
 
 const title = document.getElementById('title');
@@ -64,5 +64,5 @@ choiceForm.addEventListener('submit', function(e) {
 });
 
 backButton.addEventListener('click', () => {
-    window.location.href = './';
+    window.location = './';
 });

@@ -77,9 +77,9 @@ img {
 
 .quest {
     float: left;
-    height: 70px;
+    height: 68px;
     width: 100px;
-    padding-top: 30px;
+    padding-top: 32px;
     text-align: center;
     border: solid 1px black;
     font-size: 15pt;
@@ -90,7 +90,21 @@ img {
     color: cornsilk;
     text-decoration: none;
     transition: transform 1s;
+}
 
+.completed {
+    float: left;
+    height: 55px;
+    width: 100px;
+    padding-top: 45px;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 10pt;
+    font-family: QuickSand;
+    border-radius: 100px;
+    background: rgba(133, 133, 133, 0.5);
+    color: cornsilk;
+    text-decoration: none;
 }
 
 .quest:hover {
