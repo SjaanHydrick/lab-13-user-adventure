@@ -38,7 +38,7 @@ export function loadProfile() {
     tapes.textContent = user.tapes;
 
     if (isDead(user)) {
-        hp.textContent = 'DEAD';
+        hp.textContent = 'DECEASED';
     } else {
         hp.textContent = user.hp;
     }

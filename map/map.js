@@ -6,7 +6,7 @@ import hasCompletedAllQuests from './completedAllQuests.js';
 import isDead from '../quests/isDead.js';
 
 loadProfile();
-
+//
 const user = getUser();
 
 if (isDead(user) || hasCompletedAllQuests(quests, user)) {
@@ -18,6 +18,7 @@ const nav = document.getElementById('quests');
 for (let i = 0; i < quests.length; i++) {
     const quest = quests[i];
     let questDisplay = null;
+
     if (user.completed[quest.id]) {
         questDisplay = createCompletedQuest(quest);
     } else {
@@ -26,3 +27,4 @@ for (let i = 0; i < quests.length; i++) {
 
     nav.appendChild(questDisplay);
 }
+

@@ -1,4 +1,5 @@
 const subwayTape = {
+    id: 'subwayTape',
     choices: [{
         id: 'subwayYes',
         description: 'Yes',
@@ -18,6 +19,7 @@ const subwayTape = {
 };
 
 const mallTape = {
+    id: 'mallTape',
     choices: [
         {
             id: 'pharmacyYes',
@@ -42,6 +44,7 @@ const mallTape = {
 };
 
 const cabinTape = {
+    id: 'cabinTape',
     choices: [
         {
             id: 'cabinYes',
@@ -68,6 +71,7 @@ const cabinTape = {
 };
 
 const groceryTape = {
+    id: 'groceryTape',
     choices: [
         {
             id: 'groceryYes',
@@ -93,6 +97,7 @@ const groceryTape = {
 };
 
 const coastTape = {
+    id: 'coastTape',
     choices: [
         {
             id: 'coastYes',
