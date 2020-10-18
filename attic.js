@@ -206,7 +206,7 @@ const groceryStore = {
     }, {
         id: 'backRoom',
         description: 'Explore Back Room',
-        resultImage: '/gameCube',
+        resultImage: '/gameCube.png',
         result: `Most of the boxes are full of food that is long-rotten or nothing of use. But in the corner you find a strange cube-shaped relic! You rush back to the merchant. They're going to be so pleased! +12 Gil`,
         hp: 0,
         gil: 12,
