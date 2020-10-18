@@ -24,7 +24,7 @@ buttonOne.addEventListener('click', () => {
 });
 
 buttonTwo.addEventListener('click', () => {
-    text.textContent = `You gotta shape up, kid. Relic hunting ain't no easy business. Gotta be on your toes all the time or you might lose 'em, you know what I'm saying? Ha! So here's the job: there's a trading post out near the coast that I need to get to. The walk'll take about three weeks, and I need you to do my dirty work along the way. That means being on the lookout for relics! If you find a good one, I might even kick you some Gil.`;
+    text.textContent = `You gotta shape up, kid. Relic hunting ain't no easy business. Gotta be on your toes all the time or you might lose 'em, you know what I'm saying? Ha! So here's the job: there's a trading post that I need to get to. The walk'll take about three weeks, and I need you to do my dirty work along the way. That means being on the lookout for relics! If you find a good one, I might even kick you some Gil.`;
     buttonTwo.style.display = 'none';
     readyButton.style.display = 'inline';
 });
